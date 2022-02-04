@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Currency Conversor</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <header>
+            <nav id="navbar">
+                <a href="" class="nav-brand">Currencies</a>
+              </nav>
+        </header>
+    
+        <div class="container" id="main">
+            <p>Select the base currency, the amount and the target currency and we'll show you the conversion rate.</p>
+            <div class="grid">
+                <div>
+                    <h2 id="conversion">Base Currency</h2>
+                    <select name="currencies" id="base-currency"></select>
+                </div>
+                <div>
+                    <h2>Target Currency and amount</h2>
+                    <select name="convertedCurrencies" id="target-currency"></select>
+                </div>
+            </div>
+        </div>
+        <div class="result-grid">
+            <input type="text" name="quantity" id="quantity">
+            <p> = </p>
+            <p id="resultado">1</p>
+        </div>
+    </div>
+</body>
+<script type="module" src="/main.js" defer></script>
+</html>
